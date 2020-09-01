@@ -1,32 +1,36 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+    <main id="app">
+        <nav>
+            <router-link to="/">Home</router-link>
+            <router-link to="/dogs">Our Dogs</router-link>
+        </nav>
+        <router-view :dogs="dogs" />
+    </main>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import dogs from '@/assets/dogs.json';
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+export default {
+    name: 'App',
+    data() {
+        return {
+            dogs: dogs
+        }
     }
-  }
+}
+</script>
+
+<style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+    background: #eee;
+    font-family: 'Open Sans', sans-serif;
+
+    #app {
+        max-width: 1000px;
+        margin: 1rem auto;
+    }
 }
 </style>
