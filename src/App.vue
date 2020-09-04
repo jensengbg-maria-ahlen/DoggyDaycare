@@ -1,7 +1,7 @@
 <template>
     <main id="app">
         <nav>
-            <router-link to="/">Home</router-link>
+            <router-link to="/">Home</router-link>  |  
             <router-link to="/dogs">Our Dogs</router-link>
         </nav>
         <router-view :dogs="dogs" />

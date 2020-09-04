@@ -13,6 +13,11 @@ Vue.use(VueRouter)
     path: '/dogs',
     name: 'Dogs',
     component: () => import('@/views/Dogs.vue')
+  },
+  {
+    path: '/dogs/:chipNumber',
+    name: 'DogInfo',
+    component: () => import('@/views/DogInfo.vue')
   }
 ]
 

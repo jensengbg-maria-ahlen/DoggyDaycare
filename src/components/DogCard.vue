@@ -1,10 +1,8 @@
 <template>
-  <article class="dog">
+  <article class="dog" @click="goTo(dog.chipNumber)">
       <img :src="dog.img" alt="a dog">
       <h3>Name: {{ dog.name }}</h3>
       <h4>Breed: {{ dog.breed }}</h4>
-      <h5>Age: {{ dog.age }}</h5>
-      <h5>Sex: {{ dog.sex }}</h5>
   </article>
 </template>
 
@@ -13,6 +11,11 @@ export default {
     name: 'Dog',
     props: {
         dog: Object
+    },
+    methods: {
+        goTo(id) {
+            this.$router.push(`/dogs/${id}`);
+        }
     }
 }
 </script>
@@ -55,13 +58,6 @@ export default {
             margin: 0;
             padding:0;
             font-weight: 400;
-            opacity: .6;
-        }
-
-        h5 {
-            margin: 0;
-            padding:0;
-            font-weight: 300;
             opacity: .6;
         }
     }
