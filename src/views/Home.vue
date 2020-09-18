@@ -1,7 +1,8 @@
 <template>
   <section id="home">
-    <h2>Welcome to Doggy Daycare</h2>
-    <p>We are currently takeing care of {{ dogCount }} dogs.</p>
+    <h2>Welcome to our Doggy Daycare</h2>
+    <p>We are currently taking care of {{ dogCount }} dogs.</p>
+    <img src="@/assets/happy-dog.jpg" alt="daycare">
   </section>
 </template>
 
@@ -16,6 +17,12 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+
+#home {
+  img {
+    width: 50rem;
+  }
+}
 
 </style>
