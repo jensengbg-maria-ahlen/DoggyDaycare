@@ -4,20 +4,13 @@
             <router-link to="/">Home</router-link>  |  
             <router-link to="/dogs">Our Dogs</router-link>
         </nav>
-        <router-view :dogs="dogs" />
+        <router-view />
     </main>
 </template>
 
 <script>
-import dogs from '@/assets/dogs.json';
-
 export default {
     name: 'App',
-    data() {
-        return {
-            dogs: dogs
-        }
-    }
 }
 </script>
 

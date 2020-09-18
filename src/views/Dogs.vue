@@ -10,11 +10,13 @@ import Dog from '@/components/DogCard.vue';
 
 export default {
     name: 'Dogs',
-    props: {
-        dogs: Array
-    },
     components: {
         Dog
+    },
+    computed: {
+        dogs() {
+            return this.$store.state.dogs
+        }
     }
 }
 </script>

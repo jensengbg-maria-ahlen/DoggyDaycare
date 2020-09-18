@@ -16,13 +16,9 @@
 <script>
 export default {
     name: 'DogInfo',
-    props: {
-        dogs: Array
-    },
     computed:{
         dog() {
-            let result = this.dogs.filter(dog => dog.chipNumber === this.$route.params.chipNumber)[0]
-            return result;
+            return this.$store.getters.dog(this.$route.params.chipNumber)
         }
     }
 }
