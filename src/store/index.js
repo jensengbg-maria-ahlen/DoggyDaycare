@@ -30,6 +30,13 @@ export default new Vuex.Store({
     },
     dogCount(state) {
       return state.dogs.length
+    },
+    getDogs (state) {
+      return state.dogs.map(dog => {
+        return {
+          ...dog
+        }
+      })
     }
   }
 })

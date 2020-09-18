@@ -1,7 +1,7 @@
 <template>
     <section id="dogs">
         <h2>Our Dogs</h2>
-        <Dog v-for="dog in dogs" :key="dog.chipNumber" :dog="dog" />
+        <Dog v-for="dog in getDogs" :key="dog.chipNumber" :dog="dog" />
     </section>
 </template>
 
@@ -16,6 +16,9 @@ export default {
     computed: {
         dogs() {
             return this.$store.state.dogs
+        },
+        getDogs() {
+            return this.$store.getters.getDogs
         }
     }
 }
