@@ -33,6 +33,7 @@ export default {
 
         h2 {
             grid-column: auto / span 4;
+            color: $mainColor;
         }
     }
 

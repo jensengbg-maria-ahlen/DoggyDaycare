@@ -40,7 +40,7 @@ export default {
         @include flex-center;
         flex-direction: column;
         background: white;
-        box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+        box-shadow: $shadow;
         border-radius: 3px;
         max-width: 600px;
 

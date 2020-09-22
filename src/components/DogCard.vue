@@ -28,7 +28,7 @@ export default {
         background: white;
         @include flex-center;
         flex-direction: column;
-        box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+        box-shadow: $shadow;
         padding: 3rem 0;
         border-radius: 3px;
         transition: all .2s ease;
@@ -36,7 +36,7 @@ export default {
 
         &:hover {
             transform: scale(1.1);
-            box-shadow: 0 0 1.5rem rgba(0, 0, 0, .5);
+            box-shadow: $shadow;
             cursor: pointer;
 
             img {

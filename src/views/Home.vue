@@ -27,6 +27,9 @@ export default {
   }
 
   h2 {
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
     color: $mainColor;
   }
 }
