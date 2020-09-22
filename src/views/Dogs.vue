@@ -26,11 +26,10 @@ export default {
 
 <style lang="scss">
 @import './../scss/typography';
+@import './../scss/variables';
 
     #dogs {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1rem;
+        @include grid-4-column;
 
         h2 {
             grid-column: auto / span 4;

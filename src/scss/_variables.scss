@@ -1,2 +1,22 @@
-/* HEADLINE COLOUR */
+/* Variables */
+
 $mainColor: rgb(76, 173, 56);
+
+
+
+@mixin reset-mp {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin grid-4-column {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}

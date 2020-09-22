@@ -26,10 +26,8 @@ export default {
 
     .dog {
         background: white;
-        display: flex;
+        @include flex-center;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
         padding: 3rem 0;
         border-radius: 3px;
@@ -47,6 +45,7 @@ export default {
         }
 
         img {
+            @include flex-center;
             width: 8rem;
             height: 8rem;
             object-fit: cover;

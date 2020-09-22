@@ -37,10 +37,8 @@ export default {
 
     #doginfo {
         margin: 1rem auto;
-        display: flex;
+        @include flex-center;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         background: white;
         box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
         border-radius: 3px;
