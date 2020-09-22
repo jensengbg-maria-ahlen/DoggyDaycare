@@ -18,11 +18,10 @@ export default {
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import './scss/typography';
 
 body {
     background: #eee;
-    font-family: 'Open Sans', sans-serif;
 
     #app {
         max-width: 1000px;

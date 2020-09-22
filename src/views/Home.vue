@@ -18,10 +18,16 @@ export default {
 </script>
 
 <style lang="scss">
+@import './../scss/variables';
+@import './../scss/typography';
 
 #home {
   img {
     width: 50rem;
+  }
+
+  h2 {
+    color: $mainColor;
   }
 }
 
